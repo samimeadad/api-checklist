@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SportsDB API</title>
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    </head>
+
+    <body>
+        <h1 class="bg-primary text-white container text-center mt-5 p-4">Sports Team Information</h1>
+
+        <!-- Search Area -->
+        <div class="input-group mt-5 mb-3 container">
+            <input id="search-field" type="text" class="form-control" placeholder="Enter Team Name to Search"
+                aria-label="search-field" aria-describedby="button-addon2">
+            <button class="ms-2 btn btn-primary rounded-3" type="button" id="search-button">Search</button>
+        </div>
+
+        <!-- Loading Spinner -->
+        <div id="spinner" class="text-center">
+            <div class="spinner-border" role="status">
+                <span class="sr-only"></span>
+            </div>
+        </div>
+
+        <!-- Team Detail -->
+        <section class="mt-5 w-75 mx-auto">
+            <div id="details-container" class="row row-cols-1 row-cols-md-3 g-4 justify-content-center">
+            </div>
+        </section>
+
+        <!-- Search Item Information Display -->
+        <section class="container mt-5">
+            <div id="team-container" class="row row-cols-1 row-cols-md-3 g-4">
+            </div>
+        </section>
+
+        <div id="api-error" class="bg-danger w-75 mx-auto">
+            <h2 class="text-white text-center">SOMETHING GONE WRONG!!! SEARCH RESULT NOT FOUND!!!</h2>
+        </div>
+        <script src="js/p8.js"></script>
+    </body>
+
+</html>
